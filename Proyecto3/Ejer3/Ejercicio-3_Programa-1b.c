@@ -14,24 +14,24 @@ int main(){
     y = y + y;
 
     printf("x es %d",x);
-    printf(" ademas, y es %d\n",y);
-
-    /*
-    Programa 1.b
-    Ingrese el valor x:=2
-    Ingrese el valor y:=5
-    x es 7 ademas, y es 10
-
-    Programa 1.b
-    Ingrese el valor x:=3
-    Ingrese el valor y:=9
-    x es 12 ademas, y es 18
-
-    Programa 1.b
-    Ingrese el valor x:=100
-    Ingrese el valor y:=-3
-    x es 97 ademas, y es -6
-    */
+    printf(", y es %d\n",y);
 
     return 0;
 }
+
+/*
+Programa 1.b
+Ingrese el valor x:=2
+Ingrese el valor y:=5
+x es 7, y es 10
+
+Programa 1.b
+Ingrese el valor x:=3
+Ingrese el valor y:=9
+x es 12, y es 18
+
+Programa 1.b
+Ingrese el valor x:=100
+Ingrese el valor y:=-3
+x es 97, y es -6
+*/
