@@ -55,6 +55,6 @@ int main(){
 
   /*La ultima expresion tiene de resultado el tipo Bool, 
   pero que en C se representa como 0 = False y "Cualquier numero diferente a 0" = True*/
-
+  
   return 0;
 }
