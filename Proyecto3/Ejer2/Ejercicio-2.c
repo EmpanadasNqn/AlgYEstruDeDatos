@@ -28,9 +28,9 @@ int main(){
     r2 = x + y == 0 && y - x == (-1) * z;
     r3 =  !b && w;
 
-    printf("\nx mod 4 == 0 = %d\n",r1);
-    printf("x + y == 0 && y - x == (-1) * z = %d\n",r2);
-    printf("not b && w = %d\n",r3);
+    printf("\n(x mod 4 == 0) = %d\n",r1);
+    printf("(x + y == 0 && y - x == (-1) * z) = %d\n",r2);
+    printf("(not b && w) = %d\n",r3);
 
     /*Para el Estado {x:=0, y:=0, z:=0, b:=True, w:=True} los resultados quedan True, True y False:
     
@@ -42,9 +42,9 @@ int main(){
     y:=0
     z:=0
 
-    x mod 4 == 0 = 1
-    x + y == 0 && y - x == (-1) * z = 1
-    not b && w = 0
+    (x mod 4 == 0) = 1
+    (x + y == 0 && y - x == (-1) * z) = 1
+    (not b && w) = 0
     */
 
     /*Para el Estado {x:=1, y:=0, z:=0, b:=False, w:=True} los resultados quedan False, False y True:
@@ -57,9 +57,9 @@ int main(){
     y:=0
     z:=0
 
-    x mod 4 == 0 = 0
-    x + y == 0 && y - x == (-1) * z = 0
-    not b && w = 1
+    (x mod 4 == 0) = 0
+    (x + y == 0 && y - x == (-1) * z) = 0
+    (not b && w) = 1
     */
 
     return 0;
