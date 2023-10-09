@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(){
-
     int x, y, z, m;
 
     printf("Ingrese el valor x:=");

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(){
-
     int i;
 
     printf("Programa 1.i\n");

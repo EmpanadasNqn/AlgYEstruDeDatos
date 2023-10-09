@@ -2,7 +2,6 @@
 #include <stdbool.h>
 
 int main(){
-
     printf("Programa 2.\n");
 
     int x, i;

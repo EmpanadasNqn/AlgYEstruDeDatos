@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(){
+    printf("Programa 1.b\n");
 
     int x, y;
 
-    printf("Programa 1.b\n");
     printf("Ingrese el valor x:=");
     scanf("%d",&x);
     printf("Ingrese el valor y:=");

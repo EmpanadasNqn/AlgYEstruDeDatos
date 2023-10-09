@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 int main(){
+    printf("Programa 1.a\n");
 
     int x;
 
-    printf("Programa 1.a\n");
     printf("Ingrese el valor de x:=");
     scanf("%d",&x);
+
     x = 5;
+    
     printf("x es %d\n",x);
 
     return 0;
