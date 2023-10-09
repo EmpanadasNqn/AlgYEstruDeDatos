@@ -9,8 +9,9 @@ int pedir_entero(char name){
 }
 
 int main(){
-    int x = pedir_entero('x');
-    int abs;
+    int x, abs;
+
+    x = pedir_entero('x');
 
     if (x<0){
         abs = -x;

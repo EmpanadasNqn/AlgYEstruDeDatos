@@ -14,14 +14,20 @@ void imprimir_entero(char name, int x){
 
 int main(){
     int x, y, z;
-    x = pedir_entero('x');
-    y = pedir_entero('y');
+
+    int x0 = pedir_entero('x');
+    int y0 = pedir_entero('y');
     
+    x = x0;
+    y = y0;
+
+    assert(x == x0 && y == y0);
+
     z = x;
     x = y;
     y = z;
 
-    assert((x == x || x == y) && (y == x || y == y));
+    assert(x == y0 && y == x0);
 
     imprimir_entero('x',x);
     imprimir_entero('y',y);
