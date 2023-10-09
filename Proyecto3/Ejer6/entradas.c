@@ -2,10 +2,8 @@
 
 int pedir_entero(char name){
     int x;
-
     printf("Ingrese un entero en la variable %c:=",name);
     scanf("%d",&x);
-    
     return x;
 }
 
