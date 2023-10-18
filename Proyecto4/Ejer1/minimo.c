@@ -19,7 +19,7 @@ int main(){
         min = y;
     }
     
-    assert(min <= x && min <= y && (min == x || min == y)) ;
+    assert(min <= x && min <= y && (min == x || min == y));
 
     printf("El minimo elemento entre %d y %d es %d.\n",x,y,min);
 
