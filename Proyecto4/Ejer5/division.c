@@ -8,13 +8,13 @@ int pedir_entero(char name){
     return x;
 }
 
-struct div_t {
+typedef struct {
     int cociente;
     int resto;
-};  
+}div_t;  
 
-struct div_t division(int x, int y) {
-    struct div_t d;
+div_t division(int x, int y) {
+    div_t d;
     d.cociente = x/y;
     d.resto = x%y;
     return d;
@@ -27,10 +27,10 @@ int main() {
 
     assert(y > 0 && x >= 0);
 
-    struct div_t resultado;
+    div_t resultado;
 
     resultado = division(x,y);
-    printf("La division entre %d/%d. Deja Resto %d y Cociente %d.\n",x,y,resultado.resto,resultado.cociente);
+    printf("La division de %d/%d. Deja Resto %d y Cociente %d.\n",x,y,resultado.resto,resultado.cociente);
 
     return 0;
 }
@@ -38,13 +38,13 @@ int main() {
 /*
 Ingrese un entero en la variable x:=1
 Ingrese un entero en la variable y:=2
-La division entre 1/2. Deja Resto 1 y Cociente 0.
+La division de 1/2. Deja Resto 1 y Cociente 0.
 
 Ingrese un entero en la variable x:=9
 Ingrese un entero en la variable y:=5
-La division entre 9/5. Deja Resto 4 y Cociente 1.
+La division de 9/5. Deja Resto 4 y Cociente 1.
 
 Ingrese un entero en la variable x:=100
 Ingrese un entero en la variable y:=3
-La division entre 100/3. Deja Resto 1 y Cociente 33.
+La division de 100/3. Deja Resto 1 y Cociente 33.
 */
