@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int pedir_entero(char name){
+int pedir_entero(){
     int x;
-    printf("Ingrese un entero en la variable %c:=",name);
+    printf("Ingrese la longitud del arreglo :=");
     scanf("%d",&x);
     return x;
 }
@@ -27,7 +27,7 @@ void imprimir_arreglo(int n_max, int a[]) {
 }
 
 int main() {
-    int n_max = pedir_entero('N');
+    int n_max = pedir_entero();
     int a[n_max];
 
     pedir_arreglo(n_max, a);
