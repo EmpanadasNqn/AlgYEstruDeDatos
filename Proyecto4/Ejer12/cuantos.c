@@ -3,7 +3,7 @@
 
 int pedir_entero_esp(){
     int x;
-    printf("Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo :=");
+    printf("Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo = ");
     scanf("%d",&x);
     printf("\n");
     return x;
@@ -13,7 +13,7 @@ void pedir_arreglo(int tam, int a[]) {
     int i = 0;
 
     while (i < tam){
-        printf("Ingrese, en la posicion %d del arreglo, el entero :=",i);
+        printf("Ingrese, en la posicion %d del arreglo, el entero = ",i);
         scanf("%d",&a[i]);
         i = i + 1;
     }
@@ -61,37 +61,37 @@ int main() {
 }
 
 /*
-Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo :=3
+Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo = 3
 
-Ingrese, en la posicion 0 del arreglo, el entero :=1
-Ingrese, en la posicion 1 del arreglo, el entero :=2
-Ingrese, en la posicion 2 del arreglo, el entero :=3
-Ingrese, en la posicion 3 del arreglo, el entero :=3
-Ingrese, en la posicion 4 del arreglo, el entero :=4
+Ingrese, en la posicion 0 del arreglo, el entero = 1
+Ingrese, en la posicion 1 del arreglo, el entero = 2
+Ingrese, en la posicion 2 del arreglo, el entero = 3
+Ingrese, en la posicion 3 del arreglo, el entero = 3
+Ingrese, en la posicion 4 del arreglo, el entero = 4
 
 Hay 2 elementos minimos a 3.
 Hay 2 elementos iguales a 3.
 Hay 1 elementos mayores a 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo = 3
 
-Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo :=3
-
-Ingrese, en la posicion 0 del arreglo, el entero :=3
-Ingrese, en la posicion 1 del arreglo, el entero :=3
-Ingrese, en la posicion 2 del arreglo, el entero :=3
-Ingrese, en la posicion 3 del arreglo, el entero :=3
-Ingrese, en la posicion 4 del arreglo, el entero :=4
+Ingrese, en la posicion 0 del arreglo, el entero = 3       
+Ingrese, en la posicion 1 del arreglo, el entero = 3
+Ingrese, en la posicion 2 del arreglo, el entero = 3
+Ingrese, en la posicion 3 del arreglo, el entero = 3
+Ingrese, en la posicion 4 del arreglo, el entero = 4
 
 Hay 0 elementos minimos a 3.
 Hay 4 elementos iguales a 3.
 Hay 1 elementos mayores a 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo = 1
 
-Ingrese un elemento para buscar elementos minimos, iguales o mayores en el arreglo :=1
-
-Ingrese, en la posicion 0 del arreglo, el entero :=2
-Ingrese, en la posicion 1 del arreglo, el entero :=3
-Ingrese, en la posicion 2 del arreglo, el entero :=0
-Ingrese, en la posicion 3 del arreglo, el entero :=4
-Ingrese, en la posicion 4 del arreglo, el entero :=5
+Ingrese, en la posicion 0 del arreglo, el entero = 2
+Ingrese, en la posicion 1 del arreglo, el entero = 3
+Ingrese, en la posicion 2 del arreglo, el entero = 0
+Ingrese, en la posicion 3 del arreglo, el entero = 4
+Ingrese, en la posicion 4 del arreglo, el entero = 5
 
 Hay 1 elementos minimos a 1.
 Hay 0 elementos iguales a 1.

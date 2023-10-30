@@ -5,18 +5,18 @@ void pedir_arreglo(int tam, int a[]) {
     int i = 0;
 
     while (i < tam){
-        printf("Ingrese, en la posicion %d del arreglo, el entero :=",i);
+        printf("Ingrese, en la posicion %d del arreglo, el entero = ",i);
         scanf("%d",&a[i]);
         i = i + 1;
     }
     printf("\n");
 }
 
-void imprimir_arreglo(int n_max, int a[]) {
+void imprimir_arreglo(int tam, int a[]) {
     int i = 0;
 
-    while (i < n_max){
-        printf("El valor del vector en la posicion %d es %d.\n",i,a[i]);
+    while (i < tam){
+        printf("El valor del arreglo en la posicion %d es %d.\n",i,a[i]);
         i = i + 1;
     }   
 }
@@ -55,28 +55,28 @@ int main() {
 }
 
 /*
-Ingrese, en la posicion 0 del arreglo, el entero :=2
-Ingrese, en la posicion 1 del arreglo, el entero :=2
-Ingrese, en la posicion 2 del arreglo, el entero :=1
+Ingrese, en la posicion 0 del arreglo, el entero = 2
+Ingrese, en la posicion 1 del arreglo, el entero = 2
+Ingrese, en la posicion 2 del arreglo, el entero = 1
 
 La longitud del tramo inicial con elementos iguales del arreglo es 2.
 El tramo inicial es:
-El valor del vector en la posicion 0 es 2.
-El valor del vector en la posicion 1 es 2.
-
-Ingrese, en la posicion 0 del arreglo, el entero :=1
-Ingrese, en la posicion 1 del arreglo, el entero :=1
-Ingrese, en la posicion 2 del arreglo, el entero :=1
+El valor del arreglo en la posicion 0 es 2.
+El valor del arreglo en la posicion 1 es 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 1
+Ingrese, en la posicion 1 del arreglo, el entero = 1
+Ingrese, en la posicion 2 del arreglo, el entero = 1
 
 La longitud del tramo inicial con elementos iguales del arreglo es 3.
 El tramo inicial es:
-El valor del vector en la posicion 0 es 1.
-El valor del vector en la posicion 1 es 1.
-El valor del vector en la posicion 2 es 1.
-
-Ingrese, en la posicion 0 del arreglo, el entero :=1      
-Ingrese, en la posicion 1 del arreglo, el entero :=2
-Ingrese, en la posicion 2 del arreglo, el entero :=1
+El valor del arreglo en la posicion 0 es 1.
+El valor del arreglo en la posicion 1 es 1.
+El valor del arreglo en la posicion 2 es 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 1
+Ingrese, en la posicion 1 del arreglo, el entero = 2
+Ingrese, en la posicion 2 del arreglo, el entero = 1
 
 No hay un tramo inicial con elementos iguales a 1 en el arreglo.
 */

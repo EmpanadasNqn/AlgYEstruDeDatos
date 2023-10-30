@@ -4,7 +4,7 @@
 
 int pedir_entero(){
     int x;
-    printf("Ingrese un entero n := ");
+    printf("Ingrese un entero n = ");
     scanf("%d",&x);
     return x;
 }
@@ -56,16 +56,16 @@ int main() {
 }
 
 /*
-Ingrese un entero n := 4
+Ingrese un entero n = 4
 El 4-esimo primo es 7.
-
-Ingrese un entero n := 6
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero n = 6
 El 6-esimo primo es 13.
-
-Ingrese un entero n := 20
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero n = 20
 El 20-esimo primo es 71.
-
-Ingrese un entero n := -1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero n = -1
 exPrimos: primo.c:49: main: Assertion `N > 0' failed.
 Abortado (`core' generado)
 */

@@ -3,7 +3,7 @@
 
 int pedir_char(char name){
     char x;
-    printf("Ingrese una letra en la variable %c:=",name);
+    printf("Ingrese una letra en la variable %c = ",name);
     scanf("%c",&x);
     return x;
 }
@@ -28,15 +28,15 @@ int main() {
 }
 
 /*
-Ingrese una letra en la variable x:=a
+Ingrese una letra en la variable x = a
 La letra a es Vocal.
-
-Ingrese una letra en la variable x:=A
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese una letra en la variable x = A
 La letra A es Vocal.
-
-Ingrese una letra en la variable x:=v
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese una letra en la variable x = v
 La letra v no es Vocal.
-
-Ingrese una letra en la variable x:=u
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese una letra en la variable x = u
 La letra u es Vocal.
 */

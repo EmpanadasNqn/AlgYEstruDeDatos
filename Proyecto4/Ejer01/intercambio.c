@@ -3,7 +3,7 @@
 
 int pedir_entero(char name){
     int x;
-    printf("Ingrese un entero en la variable %c:=",name);
+    printf("Ingrese un entero en la variable %c = ",name);
     scanf("%d",&x);
     return x;
 }
@@ -36,18 +36,18 @@ int main(){
 }
 
 /*
-Ingrese un entero en la variable x:=5
-Ingrese un entero en la variable y:=10
+Ingrese un entero en la variable x = 5
+Ingrese un entero en la variable y = 10
 El entero x es 10.
 El entero y es 5.
-
-Ingrese un entero en la variable x:=10
-Ingrese un entero en la variable y:=5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero en la variable x = 10
+Ingrese un entero en la variable y = 5
 El entero x es 5.
 El entero y es 10.
-
-Ingrese un entero en la variable x:=5
-Ingrese un entero en la variable y:=5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero en la variable x = 5
+Ingrese un entero en la variable y = 5
 El entero x es 5.
 El entero y es 5.
 */

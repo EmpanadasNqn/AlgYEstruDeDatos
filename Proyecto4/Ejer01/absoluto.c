@@ -3,7 +3,7 @@
 
 int pedir_entero(char name){
     int x;
-    printf("Ingrese un entero en la variable %c:=",name);
+    printf("Ingrese un entero en la variable %c = ",name);
     scanf("%d",&x);   
     return x;
 }
@@ -21,18 +21,18 @@ int main(){
     
     assert(abs >= 0);
 
-    printf("El valor absoluto de %d es %d\n",x,abs);
+    printf("El valor absoluto de %d es %d.\n",x,abs);
 
     return 0;
 }
 
 /*
-Ingrese un entero en la variable x:=5
-El valor absoluto de 5 es 5
-
-Ingrese un entero en la variable x:=-5
-El valor absoluto de -5 es 5
-
-Ingrese un entero en la variable x:=0
-El valor absoluto de 0 es 0
+Ingrese un entero en la variable x = 5
+El valor absoluto de 5 es 5.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero en la variable x = -5
+El valor absoluto de -5 es 5.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero en la variable x = 0
+El valor absoluto de 0 es 0.
 */

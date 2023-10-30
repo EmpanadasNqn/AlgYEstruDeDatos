@@ -1,17 +1,11 @@
 #include <stdio.h>
+#define Tam 3
 
-int pedir_entero(char name){
-    int x;
-    printf("Ingrese un entero en la variable %c:=",name);
-    scanf("%d",&x);
-    return x;
-}
-
-void pedir_arreglo(int n_max, int a[]) {
+void pedir_arreglo(int tam, int a[]) {
     int i = 0;
 
-    while (i < n_max){
-        printf("Ingrese, en la posicion %d del vector, el entero :=",i);
+    while (i < tam){
+        printf("Ingrese, en la posicion %d del arreglo, el entero = ",i);
         scanf("%d",&a[i]);
         i = i + 1;
     }
@@ -30,13 +24,29 @@ int sumatoria(int tam, int a[]) {
 }
 
 int main() {
-    int tam = pedir_entero('t');
-    int a[tam];
+    int a[Tam], tam;
 
-    pedir_arreglo(tam, a);
-    tam = sumatoria(tam, a);
+    pedir_arreglo(Tam, a);
+    tam = sumatoria(Tam, a);
 
     printf("La sumatoria del arreglo es %d.\n",tam);
 
     return 0;
 }
+
+/*
+Ingrese, en la posicion 0 del arreglo, el entero = 1
+Ingrese, en la posicion 1 del arreglo, el entero = 2
+Ingrese, en la posicion 2 del arreglo, el entero = 3
+La sumatoria del arreglo es 6.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 10
+Ingrese, en la posicion 1 del arreglo, el entero = 20
+Ingrese, en la posicion 2 del arreglo, el entero = 30
+La sumatoria del arreglo es 60.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 4
+Ingrese, en la posicion 1 del arreglo, el entero = 76
+Ingrese, en la posicion 2 del arreglo, el entero = 2
+La sumatoria del arreglo es 82.
+*/

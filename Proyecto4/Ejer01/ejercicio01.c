@@ -3,7 +3,7 @@
 
 int pedir_entero(char name){
     int x;
-    printf("Ingrese un entero en la variable %c:=",name);
+    printf("Ingrese un entero positivo en la variable %c = ",name);
     scanf("%d",&x);   
     return x;
 }
@@ -17,25 +17,26 @@ void hola_hasta(int n){
 }
 
 int main(){
-    int x = pedir_entero('x');
-    assert(x > 0);
+    int n = pedir_entero('n');
 
-    hola_hasta(x);
+    assert(n > 0);
+
+    hola_hasta(n);
 
     return 0;
 }
 
 /*
-Ingrese un entero en la variable x:=3
+Ingrese un entero positivo en la variable n = 3
 Hola
 Hola
 Hola
-
-Ingrese un entero en la variable x:=0
-Ex01: Ejercicio01.c:22: main: Assertion `x > 0' failed.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero positivo en la variable n = 0
+ex01: ejercicio01.c:22: main: Assertion `n > 0' failed.
 Abortado (`core' generado)
-
-Ingrese un entero en la variable x:=-3
-Ex01: Ejercicio01.c:22: main: Assertion `x > 0' failed.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero positivo en la variable n = -3
+ex01: ejercicio01.c:22: main: Assertion `n > 0' failed.
 Abortado (`core' generado)
 */

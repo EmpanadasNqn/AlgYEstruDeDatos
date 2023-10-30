@@ -3,7 +3,7 @@
 
 int pedir_entero(){
     int x;
-    printf("Ingrese un entero en n := ");
+    printf("Ingrese un entero positivo en n = ");
     scanf("%d",&x);
     return x;
 }
@@ -62,25 +62,25 @@ int main() {
 }
 
 /*
-Ingrese un entero en n := 3
+Ingrese un entero positivo en n = 3
 
 El 3-esimo primo es 5.
-
-Ingrese un entero en n := 4
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero positivo en n = 4
 
 El 4-esimo primo es 7.
-
-Ingrese un entero en n := 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero positivo en n = 5
 
 El 5-esimo primo es 11.
-
-Ingrese un entero en n := -1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese un entero positivo en n = -1
 
 Tiene que ser positivo.
 Intentelo denuevo.
-Ingrese un entero en n := -4
+Ingrese un entero en n = -4
 Intentelo denuevo.
-Ingrese un entero en n := 4
+Ingrese un entero en n = 4
 
 El 4-esimo primo es 7.
 */

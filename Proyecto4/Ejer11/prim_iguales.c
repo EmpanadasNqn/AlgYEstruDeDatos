@@ -5,7 +5,7 @@ void pedir_arreglo(int tam, int a[]) {
     int i = 0;
 
     while (i < tam){
-        printf("Ingrese, en la posicion %d del arreglo, el entero :=",i);
+        printf("Ingrese, en la posicion %d del arreglo, el entero = ",i);
         scanf("%d",&a[i]);
         i = i + 1;
     }
@@ -45,33 +45,33 @@ int main() {
 }
 
 /*
-Ingrese, en la posicion 0 del arreglo, el entero :=2
-Ingrese, en la posicion 1 del arreglo, el entero :=3
-Ingrese, en la posicion 2 del arreglo, el entero :=2
+Ingrese, en la posicion 0 del arreglo, el entero = 2
+Ingrese, en la posicion 1 del arreglo, el entero = 3
+Ingrese, en la posicion 2 del arreglo, el entero = 2
 
 No hay un tramo inicial con elementos iguales en el arreglo.
-
-Ingrese, en la posicion 0 del arreglo, el entero :=1
-Ingrese, en la posicion 1 del arreglo, el entero :=1
-Ingrese, en la posicion 2 del arreglo, el entero :=1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 1
+Ingrese, en la posicion 1 del arreglo, el entero = 1
+Ingrese, en la posicion 2 del arreglo, el entero = 1
 
 La longitud del tramo inicial con elementos iguales del arreglo es 3.
-
-Ingrese, en la posicion 0 del arreglo, el entero :=1
-Ingrese, en la posicion 1 del arreglo, el entero :=2
-Ingrese, en la posicion 2 del arreglo, el entero :=3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 1
+Ingrese, en la posicion 1 del arreglo, el entero = 2
+Ingrese, en la posicion 2 del arreglo, el entero = 3
 
 No hay un tramo inicial con elementos iguales en el arreglo.
-
-Ingrese, en la posicion 0 del arreglo, el entero :=1
-Ingrese, en la posicion 1 del arreglo, el entero :=1
-Ingrese, en la posicion 2 del arreglo, el entero :=2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 1
+Ingrese, en la posicion 1 del arreglo, el entero = 1
+Ingrese, en la posicion 2 del arreglo, el entero = 2
 
 La longitud del tramo inicial con elementos iguales del arreglo es 2.
-
-Ingrese, en la posicion 0 del arreglo, el entero :=2
-Ingrese, en la posicion 1 del arreglo, el entero :=3
-Ingrese, en la posicion 2 del arreglo, el entero :=3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, el entero = 2
+Ingrese, en la posicion 1 del arreglo, el entero = 3
+Ingrese, en la posicion 2 del arreglo, el entero = 3
 
 No hay un tramo inicial con elementos iguales en el arreglo.
 */

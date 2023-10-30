@@ -13,7 +13,7 @@ typedef struct {
 
 asoc pedir_entero_esp(){
     asoc x;
-    printf("Ingrese la clave para buscar := ");
+    printf("Ingrese la clave para buscar = ");
     scanf(" %c",&x.clave);
     printf("\n");
     return x;
@@ -22,9 +22,9 @@ asoc pedir_entero_esp(){
 void pedir_arreglo_esp(int tam, asoc a[]) {
     int i = 0;
     while (i < tam){
-        printf("Ingrese, en la posicion %d del arreglo, la clave := ",i);
+        printf("Ingrese, en la posicion %d del arreglo, la clave = ",i);
         scanf(" %c",&a[i].clave);
-        printf("Ingrese el valor := ");
+        printf("Ingrese el valor = ");
         scanf("%d",&a[i].valor);
         i = i + 1;
     }    
@@ -59,36 +59,36 @@ int main() {
 }
 
 /*
-Ingrese, en la posicion 0 del arreglo, la clave := P
-Ingrese el valor := 1
-Ingrese, en la posicion 1 del arreglo, la clave := S
-Ingrese el valor := 2
-Ingrese, en la posicion 2 del arreglo, la clave := I
-Ingrese el valor := 3
+Ingrese, en la posicion 0 del arreglo, la clave = P
+Ingrese el valor = 1
+Ingrese, en la posicion 1 del arreglo, la clave = S
+Ingrese el valor = 2
+Ingrese, en la posicion 2 del arreglo, la clave = I
+Ingrese el valor = 3
 
-Ingrese la clave para buscar := I
+Ingrese la clave para buscar = I
 
 La clave I, existe en el Arreglo.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, la clave = P
+Ingrese el valor = 1
+Ingrese, en la posicion 1 del arreglo, la clave = S
+Ingrese el valor = 2
+Ingrese, en la posicion 2 del arreglo, la clave = I
+Ingrese el valor = 3
 
-Ingrese, en la posicion 0 del arreglo, la clave := P
-Ingrese el valor := 1
-Ingrese, en la posicion 1 del arreglo, la clave := S
-Ingrese el valor := 2
-Ingrese, en la posicion 2 del arreglo, la clave := I
-Ingrese el valor := 3
-
-Ingrese la clave para buscar := Q
+Ingrese la clave para buscar = Q
 
 La clave Q, no existe en el Arreglo.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ingrese, en la posicion 0 del arreglo, la clave = P
+Ingrese el valor = 1
+Ingrese, en la posicion 1 del arreglo, la clave = S
+Ingrese el valor = 2
+Ingrese, en la posicion 2 del arreglo, la clave = I
+Ingrese el valor = 3
 
-Ingrese, en la posicion 0 del arreglo, la clave := P
-Ingrese el valor := 1
-Ingrese, en la posicion 1 del arreglo, la clave := S
-Ingrese el valor := 2
-Ingrese, en la posicion 2 del arreglo, la clave := I
-Ingrese el valor := 3
-
-Ingrese la clave para buscar := S
+Ingrese la clave para buscar = S
 
 La clave S, existe en el Arreglo.
 */
