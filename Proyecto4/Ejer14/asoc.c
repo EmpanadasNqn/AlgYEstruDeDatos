@@ -14,8 +14,7 @@ typedef struct {
 asoc pedir_entero_esp(){
     asoc x;
     printf("Ingrese la clave para buscar := ");
-    scanf("%c",&x.clave);
-    scanf("%c",&x.clave);
+    scanf(" %c",&x.clave);
     printf("\n");
     return x;
 }
@@ -24,8 +23,7 @@ void pedir_arreglo_esp(int tam, asoc a[]) {
     int i = 0;
     while (i < tam){
         printf("Ingrese, en la posicion %d del arreglo, la clave := ",i);
-        scanf("%c",&a[i].clave);
-        scanf("%c",&a[i].clave);
+        scanf(" %c",&a[i].clave);
         printf("Ingrese el valor := ");
         scanf("%d",&a[i].valor);
         i = i + 1;
