@@ -36,7 +36,7 @@ struct paridad_t contar_paridad(int a[], int tam) {
     return r;
 }
 
-int main() {
+int main(void) {
     int a[N];
     struct paridad_t r;
 

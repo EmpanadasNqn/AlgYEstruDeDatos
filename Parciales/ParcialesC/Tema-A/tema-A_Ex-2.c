@@ -38,7 +38,7 @@ int suma_mayores(int a[], int tam, int k) {
     return r;
 }
 
-int main() {
+int main(void) {
     //Creo las variables.
     int k, r, a[N];
     

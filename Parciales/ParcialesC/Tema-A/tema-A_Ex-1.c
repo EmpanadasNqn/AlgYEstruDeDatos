@@ -12,7 +12,7 @@ void mostrar_entero(char n, int x) {
     printf("El entero %c es %d.\n",n,x);
 }
 
-int main() {
+int main(void) {
     int r, R,s, S;
     
     //Ingreso los valores de r y s que son los mismos valores de R y S.

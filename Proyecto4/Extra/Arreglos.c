@@ -2,7 +2,7 @@
 
 #define Hola 5 //Declaracion de constante
 
-int main(){
+int main(void){
     int x[5];
     int i = 0;
 

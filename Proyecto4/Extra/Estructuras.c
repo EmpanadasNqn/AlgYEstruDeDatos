@@ -12,7 +12,7 @@ typedef struct {
 
 typedef char letra;
 
-int main(){
+int main(void){
     struct par dupla;
     pares dobles;
     int x, y, z, w;

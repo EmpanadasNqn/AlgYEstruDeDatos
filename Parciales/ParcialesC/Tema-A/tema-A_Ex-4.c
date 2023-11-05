@@ -51,7 +51,7 @@ struct stats_t calcular_estadisticas(struct persona_t a[], int tam) {
     return stats;
 }
 
-int main() {
+int main(void) {
     struct persona_t a[N];
     struct stats_t stats;
 
