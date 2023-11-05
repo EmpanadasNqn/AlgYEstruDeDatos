@@ -13,7 +13,7 @@ void mostrar_entero(char n, int x) {
 }
 
 int main(void) {
-    int r, R,s, S;
+    int r, R, s, S;
     
     //Ingreso los valores de r y s que son los mismos valores de R y S.
     r = pedir_entero('r');
@@ -23,8 +23,8 @@ int main(void) {
 
     assert(r == R && s == S && S > R);  //PreCondicion
 
-    r = s - r;
-    s = r + s;
+    r = S - R;
+    s = R + S;
 
     assert(r == S - R && s == R + S);   //PostCondicion
 
