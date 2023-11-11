@@ -362,3 +362,28 @@ ghci> laBorrar "Pato" (Nodo "Pato" 2569 (Nodo "Ponch" 299 Vacia))
 Nodo "Ponch" 299 Vacia
 -}
 
+-- Ejercicio 9 Estrella
+data Arbol a = Hoja | Rama (Arbol a) a (Arbol a) deriving(Show, Eq)
+-- (Rama (Rama (Hoja) "l" (Rama (Hoja) "a" (Hoja))) "Ho" (Rama (Hoja) "Hoho" (Hoja)))
+-- (Rama (Rama (Rama (Hoja) "rio" (Hoja)) "a" (Rama (Hoja) "s" (Hoja))) "Can" (Rama (Rama (Hoja) "ar" (Hoja)) "t" (Rama (Hoja) "o" (Hoja))))
+-- (Rama (Rama (Hoja) 2 (Hoja)) 1 (Rama (Hoja) 3 (Rama (Hoja) 4 (Hoja))))
+
+aLong :: Arbol a -> Int
+aLong Hoja = 0
+aLong (Rama xs a ys) = 1 + aLong xs + aLong ys
+
+aHoja :: Arbol a -> Int
+aHoja Hoja = 1
+aHoja (Rama xs a ys) = aHoja xs + aHoja ys
+
+aInc :: Num a => Arbol a -> Arbol a
+aInc (Rama Hoja a Hoja) = Rama Hoja (a+1) Hoja
+aInc (Rama Hoja a ys) = Rama Hoja (a+1) (aInc ys)
+aInc (Rama xs a Hoja) = Rama (aInc xs) (a+1) Hoja
+aInc (Rama xs a ys) = Rama (aInc xs) (a+1) (aInc ys)
+
+aMap :: (a -> b) -> Arbol a -> Arbol b
+aMap f (Rama Hoja a Hoja) = Rama Hoja (f a) Hoja
+aMap f (Rama Hoja a ys) = Rama Hoja (f a) (aMap f ys)
+aMap f (Rama xs a Hoja) = Rama (aMap f xs) (f a) Hoja
+aMap f (Rama xs a ys) = Rama (aMap f xs) (f a) (aMap f ys)
