@@ -39,3 +39,21 @@ laSumaMayores :: (Ord b, Num b) => ListaAsoc a b -> b -> b
 laSumaMayores Vacia _ = 0
 laSumaMayores (Nodo a b xs) ed | b > ed = b + laSumaMayores xs ed
 laSumaMayores _ _ = 0
+
+--Ejercicio 4*
+data Arbol a = Hoja | Rama (Arbol a) a (Arbol a) deriving(Show, Eq)
+
+aListar :: Arbol a -> [a]
+aListar Hoja = []
+aListar (Rama xs a ys) = [a] ++ aListar xs ++ aListar ys
+
+-- (Rama (Rama (Hoja) 4 (Rama Hoja 5 Hoja)) 7 (Rama (Rama Hoja 10 Hoja) 15 (Rama Hoja 18 Hoja)))
+
+{-
+ghci> aListar (Rama (Rama (Hoja) 2 (Hoja)) 1 (Rama (Hoja) 3 (Rama (Hoja) 4 (Hoja))))
+[1,2,3,4]
+ghci> aListar (Rama (Rama (Hoja) "l" (Rama (Hoja) "a" (Hoja))) "Ho" (Rama (Hoja) "Hoho" (Hoja)))
+["Ho","l","a","Hoho"]
+ghci> aListar (Rama (Rama (Hoja) 4 (Rama Hoja 5 Hoja)) 7 (Rama (Rama Hoja 10 Hoja) 15 (Rama Hoja 18 Hoja)))
+[7,4,5,15,10,18]
+-}
